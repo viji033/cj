@@ -1,0 +1,136 @@
+.education-section {
+  padding: 3rem 0;
+}
+
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.title-wrapper {
+  display: inline-block;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.title-text {
+  position: relative;
+}
+
+.section-title .highlight {
+  color: #00c5dc;
+}
+
+.heading-underline {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #ec4899, #8b5cf6, #06b6d4);
+}
+
+.section-subtitle {
+  color: #666;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-left: 5rem;
+  border-left: 2px solid rgba(0, 197, 220, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -3rem;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #000;
+  border: 2px solid #00c5dc;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-year {
+  color: #ff00a6;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.education-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  border: 1px solid rgba(0, 197, 220, 0.3);
+}
+
+.education-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.education-details {
+  flex: 1;
+}
+
+.education-degree {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.education-institution {
+  color: #00c5dc;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.education-description {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  
+  .timeline-content {
+    flex-direction: row;
+  }
+  
+  .education-header {
+    width: 25%;
+  }
+  
+  .education-details {
+    width: 75%;
+  }
+}
