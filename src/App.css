@@ -1,7 +1,7 @@
 /* Base Styles */
 .app {
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.96);
+  background-color: rgba(0, 0, 0, 0.96) ;
   color: white;
   font-family: 'Courier New', monospace;
   overflow-x: hidden;
