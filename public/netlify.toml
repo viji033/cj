@@ -1,6 +1,0 @@
-[build]
-  command = "npm run build"
-  publish = "build"  # Or "dist" for Vite
-
-[[plugins]]
-  package = "@netlify/plugin-react"
