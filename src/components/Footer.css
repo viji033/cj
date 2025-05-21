@@ -8,8 +8,9 @@
 .background-layer {
   position: absolute;
   inset: 0;
-  background: url('https://example.com/footer-bg.jpg') center/cover;
+  background: url('https://example.com/footer-bg.jpg') center/cover no-repeat;
   opacity: 0.2;
+  z-index: 0;
 }
 
 .container {
@@ -41,6 +42,7 @@
 .footer-nav-link {
   color: #9ca3af;
   transition: color 0.3s ease;
+  text-decoration: none;
 }
 
 .footer-nav-link:hover {
@@ -55,6 +57,7 @@
 .social-icon {
   color: #9ca3af;
   transition: color 0.3s ease;
+  font-size: 1.5rem;
 }
 
 .social-icon:hover {
