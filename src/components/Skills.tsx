@@ -15,7 +15,7 @@ const skillData = [
   },
   {
     title: "Back-End Dev",
-    icon: "🖧 ",
+    icon: "🖥️ ",
     color: "neon-pink",
     skills: [
       { name: "NODE JS", level: 88 },
