@@ -164,16 +164,31 @@ const ContactInfo: React.FC<{ socialIcons: SocialIconType[] }> = ({ socialIcons 
   </div>
 );
 
-const ContactItem: React.FC<{ icon: string; title: string; content: string }> = ({ icon, title, content }) => (
-  <div className="contact-item">
-    <div className="contact-icon">
-      <i className={icon}></i>
+const ContactItem: React.FC<{ icon: string; title: string; content: string }> = ({ icon, title, content }) => {
+  if (title === "Email") {
+    return (
+      <div className="contact-item">
+        <a href={`mailto:${content}`} className="contact-icon" aria-label="Send email">
+          <i className={icon}></i>
+        </a>
+        <div className="contact-details">
+          <h4 className="contact-title">{title}</h4>
+          <a href={`mailto:${content}`} className="contact-content">{content}</a>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="contact-item">
+      <div className="contact-icon">
+        <i className={icon}></i>
+      </div>
+      <div className="contact-details">
+        <h4 className="contact-title">{title}</h4>
+        <p className="contact-content">{content}</p>
+      </div>
     </div>
-    <div className="contact-details">
-      <h4 className="contact-title">{title}</h4>
-      <p className="contact-content">{content}</p>
-    </div>
-  </div>
-);
+  );
+};
 
 export default ContactSection;

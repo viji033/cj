@@ -28,13 +28,13 @@ const PortfolioSection: React.FC = () => {
     {
       id: 5,
       title: "Portfolio",
-      category: "Digital Art",
+      category: "Web Design",
       image:
         "https://readdy.ai/api/search-image?query=surreal%20cyberpunk%20dreamscape%20with%20floating%20digital%20artifacts%20and%20glitching%20reality%2C%20neon%20colors%20against%20dark%20void%2C%20abstract%20technological%20elements%20with%20electric%20blue%20and%20hot%20pink%20accents%2C%20futuristic%20digital%20art&width=600&height=600&seq=5&orientation=squarish",
     },
     {
       id: 6,
-      title: "Cyberpunk Portfolio",
+      title: "Cyber Portfolio",
       category: "Web Design",
       image:
         "https://readdy.ai/api/search-image?query=cyberpunk%20augmented%20reality%20interface%20with%20holographic%20elements%20overlaid%20on%20dark%20urban%20environment%2C%20futuristic%20HUD%20display%20with%20neon%20elements%2C%20digital%20art%20with%20glowing%20circuit%20patterns%20and%20data%20visualization&width=600&height=600&seq=6&orientation=squarish",
@@ -42,12 +42,12 @@ const PortfolioSection: React.FC = () => {
   ];
 
   return (
-    <section id="portfolio" className="portfolio-section">
+    <section id="projects" className="portfolio-section">
       <div className="background-layer"></div>
 
       <div className="container">
         <div className="section-header">
-          <h2 className="title">My Portfolio</h2>
+          <h2 className="title">My Projects</h2>
           <p className="description">
             Explore my cyberpunk-inspired digital creations spanning UI/UX design,
             3D modeling, and digital art.
@@ -66,7 +66,7 @@ const PortfolioSection: React.FC = () => {
         </div>
 
         <div className="view-all">
-          <CtaButton href="#portfolio" color="cyan">
+          <CtaButton href="#projects" color="cyan">
             View All Projects
           </CtaButton>
         </div>

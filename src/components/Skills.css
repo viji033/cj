@@ -108,10 +108,10 @@
   color: #00f0ff;
 }
 .neon-pink {
-  color: #ff00e4;
+  color: #00ff9d;
 }
 .neon-green {
-  color: #00ff9d;
+  color: #ff00e4;
 }
 .neon-purple {
   color: #b400ff;
@@ -128,13 +128,13 @@
   background-color: #00f0ff;
 }
 .progress-fill.neon-pink {
-  background-color: #ff00e4;
-}
-.progress-fill.neon-green {
   background-color: #00ff9d;
 }
+.progress-fill.neon-green {
+  background-color: #ff00e4;
+}
 .progress-fill.neon-purple {
-  background-color: #b400ff;
+  background-color: #00ff9d;
 }
 .progress-fill.neon-orange {
   background-color: #ff7b00;

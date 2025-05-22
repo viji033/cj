@@ -33,8 +33,8 @@ const HeroSection = () => {
             Creative Full Stack Developer (MERN) passionate about building sleek, scalable web apps that blend performance with polished UI. Ready to code, create, and innovate.
           </p>
           <div className="button-group">
-            <CtaButton href="#portfolio" color="pink">
-              View Portfolio
+            <CtaButton href="#projects" color="pink">
+              View Projects
             </CtaButton>
             <CtaButton 
               onClick={handleDownloadResume} 

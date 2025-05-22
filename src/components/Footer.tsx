@@ -17,7 +17,7 @@ interface FooterSocialsProps {
 }
 
 const Footer: React.FC = () => {
-  const navItems = ["Home", "About", "Education", "Skills", "Portfolio", "Contact"];
+  const navItems = ["Home", "About", "Education", "Skills", "Projects", "Contact"];
   const socialIcons: SocialIconType[] = [
     { icon: "fab fa-github", color: "text-cyan-400", url: "https://github.com/viji033" },
     { icon: "fab fa-instagram", color: "text-pink-500", url: "https://instagram.com/yourprofile" },
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
 
 const FooterLogo: React.FC = () => (
   <div className="logo">
-    <GlitchText text="WEB-DEVELOPER" />
+    <GlitchText text="FULLSTACK DEVELOPER" />
   </div>
 );
 

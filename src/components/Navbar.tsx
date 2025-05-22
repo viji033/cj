@@ -13,7 +13,7 @@ const navItems = [
   { id: 'about', label: 'About' },
   { id: 'education', label: 'Education' },
   { id: 'skills', label: 'Skills' },
-  { id: 'portfolio', label: 'Portfolio' },
+  { id: 'projects', label: 'Projects' },
   { id: 'contact', label: 'Contact' }
 ];
 
@@ -34,7 +34,7 @@ const Navbar: React.FC<NavbarProps> = ({ isMenuOpen, toggleMenu, activeSection =
   return (
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <a href="#home" className="logo">
-        <GlitchText text="WEB-DEVELOPER" />
+        <GlitchText text="FULLSTACK DEVELOPER" />
       </a>
 
       <nav className="desktop-nav">
