@@ -5,13 +5,10 @@
   font-style: normal;
 }
 
-
-
-
+/* === Section Styles === */
 .portfolio-section {
   position: relative;
-  padding: 5rem 0;
-  
+  padding: 4rem 1rem;
 }
 
 .background-layer {
@@ -21,6 +18,7 @@
   opacity: 0.2;
 }
 
+/* === Container === */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -29,18 +27,23 @@
   z-index: 10;
 }
 
+/* === Header === */
 .section-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'SdGlitchRobot', sans-serif;
   font-weight: bold;
   margin-bottom: 1rem;
   position: relative;
   display: inline-block;
+  color: white;
+  line-height: 1.2;
+  word-break: break-word;
 }
 
 .title::after {
@@ -57,20 +60,25 @@
   color: #9ca3af;
   max-width: 600px;
   margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 1rem;
+  word-break: break-word;
 }
 
+/* === Projects Grid === */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
-}
-
-.view-all {
-  text-align: center;
-  margin-top: 3rem;
+  padding: 0 0.5rem;
 }
 
 @media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -80,4 +88,13 @@
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+/* === View All Button or Text === */
+.view-all {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: #06b6d4;
+  cursor: pointer;
 }

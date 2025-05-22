@@ -5,16 +5,9 @@
   font-style: normal;
 }
 
-
-
-
-
-
-
 .about-section {
   position: relative;
   padding: 5rem 0;
-  
 }
 
 .background-layer {
@@ -54,41 +47,38 @@
   font-family: 'SdGlitchRobot', sans-serif !important;
 }
 
-/* .title-underline {
-  display: block;
-  width: 50%;
-  height: 2px;
-  background: linear-gradient(to right, #ec4899, #8b5cf6, #06b6d4);
-  margin-top: 0.5rem;
-} */
-
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
-/* Rest of your existing CSS remains unchanged */
+/* Image section */
 .image-wrapper {
   position: relative;
+  width: 100%;
   max-width: 28rem;
   margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .image-container {
-  position: relative;
-  background-color: #000;
-  border: 1px solid rgba(55, 65, 81, 0.8);
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   overflow: hidden;
+  background-color: #000;
+  border: 1px solid rgba(55, 65, 81, 0.8);
 }
 
 .about-image {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
+/* Terminal label overlay */
 .terminal-label {
   position: absolute;
   bottom: 0;
@@ -115,6 +105,7 @@
   font-family: 'Courier New', monospace;
 }
 
+/* Details section */
 .details {
   flex: 1;
 }
@@ -154,6 +145,7 @@
   color: #06b6d4;
 }
 
+/* Desktop layout adjustments */
 @media (min-width: 1024px) {
   .about-content {
     flex-direction: row;
@@ -171,6 +163,23 @@
   }
 }
 
+/* Mobile layout adjustments */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .details {
+    padding-left: 0;
+  }
+
+  .about-image {
+    max-height: 300px;
+  }
+}
+
+/* Pulse animation */
 @keyframes pulse {
   0%, 100% {
     opacity: 1;

@@ -8,6 +8,7 @@ import ContactSection from './components/ContactSection';
 import EducationSection from './components/EducationSection';
 import Footer from './components/Footer';
 import CyberRain from './components/CyberRain';
+import GoToTopButton from './components/GoToTopButton'; // Add this import
 import './App.css';
 
 const App: React.FC = () => {
@@ -45,6 +46,9 @@ const App: React.FC = () => {
       <PortfolioSection />
       <ContactSection />
       <Footer />
+      
+      {/* Add the GoToTopButton here */}
+      <GoToTopButton />
     </div>
   );
 };

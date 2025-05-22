@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div className="avatar">
             <div className="avatar-pulse"></div>
             <img 
-              src="/cj.jpg" 
+              src="/assets/cj.jpg" 
               alt="Cyberpunk Avatar" 
               className="avatar-image"
             />

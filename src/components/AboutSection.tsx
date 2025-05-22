@@ -39,7 +39,7 @@ const AboutImage: React.FC = () => (
   <div className="image-wrapper">
     <div className="image-container">
       <img
-        src="https://readdy.ai/api/search-image?query=cyberpunk%20digital%20artist%20working%20on%20futuristic%20holographic%20interface%2C%20surrounded%20by%20neon%20lights%20and%20technology%2C%20dark%20atmospheric%20studio%20with%20glowing%20elements%2C%20high%20contrast%20digital%20art%20with%20electric%20blue%20and%20purple%20accents&width=800&height=600&seq=11&orientation=landscape"
+        src="/assets/mj.jpg" // Image from public folder
         alt="About Me"
         className="about-image"
       />
@@ -52,7 +52,7 @@ const AboutImage: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => {
-  const technologies = ["Html", "Css", "Java Script", "React", "Node.js", "Express.js","MongoDB"];
+  const technologies = ["Html", "Css", "JavaScript", "React", "Node.js", "Express.js", "MongoDB"];
 
   return (
     <section id="about" className="about-section">
@@ -62,7 +62,6 @@ const AboutSection: React.FC = () => {
         <div className="title-container">
           <h2 className="title">
             <span className="title-text">About Me</span>
-            
           </h2>
         </div>
 
