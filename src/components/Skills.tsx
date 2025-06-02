@@ -8,7 +8,7 @@ const databaseBg = "/assets/pj.jpg";
 
 const skillData = [
   {
-    title: "Front-End Dev",
+    title: "Front-End",
     icon: "🧩",
     color: "neon-blue",
     bgImage: frontendBg,
@@ -20,7 +20,7 @@ const skillData = [
     ],
   },
   {
-    title: "Back-End Dev",
+    title: "Back-End",
     icon: "🖥️",
     color: "neon-pink",
     bgImage: backendBg,

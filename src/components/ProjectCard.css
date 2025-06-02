@@ -6,6 +6,7 @@
   border: 1px solid rgba(55, 65, 81, 0.8);
   transition: all 0.5s ease;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .project-card:hover {
@@ -28,6 +29,7 @@
 .image-container {
   height: 18rem;
   overflow: hidden;
+  position: relative;
 }
 
 .project-image {
@@ -41,6 +43,29 @@
 
 .project-card:hover .project-image {
   transform: scale(1.1);
+}
+
+.github-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 2rem;
+  height: 2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 20;
+}
+
+.project-card:hover .github-icon {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.github-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .project-info {
@@ -88,6 +113,7 @@
   inset: 0;
   border: 2px solid rgba(6, 182, 212, 0);
   transition: all 0.3s ease;
+  border-radius: 8px;
 }
 
 .active-border.active {

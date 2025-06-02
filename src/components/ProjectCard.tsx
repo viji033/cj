@@ -1,12 +1,12 @@
 import React from 'react';
 import './ProjectCard.css';
 
-// ✅ Make sure Project type is defined or imported
 interface Project {
   id: number;
   title: string;
   category: string;
   image: string;
+  github: string;
 }
 
 interface ProjectCardProps {
@@ -34,6 +34,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           alt={project.title} 
           className="project-image"
         />
+
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="github-icon"
+        >
+          <img src="/assets/gj.svg" alt="GitHub" />
+        </a>
       </div>
       
       <div className="project-info">

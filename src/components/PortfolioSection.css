@@ -14,7 +14,7 @@
 .background-layer {
   position: absolute;
   inset: 0;
-  background: url('https://example.com/portfolio-bg.jpg') center/cover;
+  background: url('https://example.com/portfolio-bg.jpg') center/cover no-repeat;
   opacity: 0.2;
 }
 
