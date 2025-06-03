@@ -52,7 +52,7 @@ const AboutImage: React.FC = () => (
 );
 
 const AboutSection: React.FC = () => {
-  const technologies = ["Html", "Css", "JavaScript", "React", "Node.js", "Express.js", "MongoDB"];
+  const technologies = ["Html", "Css","Bootstrap", "JavaScript", "React", "Node.js", "Express.js", "MongoDB","Linux"];
 
   return (
     <section id="about" className="about-section">
