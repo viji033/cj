@@ -32,11 +32,11 @@ const App: React.FC = () => {
   useEffect(() => {
     const loadingTimer = setTimeout(() => {
       setLoading(false); // Start fade out of loading screen
-    }, 2600);
+    }, 2400); // Reduced from 2600
 
     const contentTimer = setTimeout(() => {
       setShowContent(true); // Start fade in of main content
-    }, 3100); // 500ms after loading starts fading out
+    }, 2800); // Reduced gap from 500ms to 400ms
 
     return () => {
       clearTimeout(loadingTimer);
@@ -54,7 +54,7 @@ const App: React.FC = () => {
       <LoadingScreen isVisible={loading} />
       
       <div className={`app ${showContent ? 'app-visible' : 'app-hidden'}`}>
-        <CyberRain />
+        {showContent && <CyberRain />}
 
         <div
           className="cursor-trail"
