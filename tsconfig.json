@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",                          // JavaScript target version
+    "lib": ["dom", "dom.iterable", "esnext"],// Libraries to include
+    "allowJs": true,                         // Allow JS files in project
+    "skipLibCheck": true,                    // Skip type checking of declaration files
+    "esModuleInterop": true,                 // Enables import/export compatibility
+    "allowSyntheticDefaultImports": true,   // Allows default import syntax
+    "strict": true,                          // Enables all strict type-checking options
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",                      // Module system (for bundlers)
+    "moduleResolution": "node",              // Resolving modules strategy
+    "resolveJsonModule": true,               // Support importing JSON files
+    "isolatedModules": true,                  // Support transpiling individual files
+    "noEmit": true,                          // Do not emit JS files, let bundler handle
+    "jsx": "react-jsx"                       // Use React 17+ JSX transform
+  },
+  "include": ["src", "webpack.config.js"]
+}
