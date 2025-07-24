@@ -9,7 +9,7 @@ const HeroSection = () => {
     const resumeUrl = '/assets/Vijay_resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Vijay_Resume.pdf';
+    link.download = 'Vijay_resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
