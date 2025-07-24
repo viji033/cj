@@ -6,7 +6,7 @@ import './HeroSection.css';
 const HeroSection = () => {
   const handleDownloadResume = () => {
     // Replace with your actual resume URL
-    const resumeUrl = '/assets/Vijay-resume.pdf';
+    const resumeUrl = '/assets/Vijay_resume.pdf';
     const link = document.createElement('a');
     link.href = resumeUrl;
     link.download = 'Vijay_Resume.pdf';
