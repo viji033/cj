@@ -34,7 +34,7 @@ const PortfolioSection: React.FC = () => {
       title: "Cyber Portfolio",
       category: "Web Design",
       image: "https://readdy.ai/api/search-image?query=cyberpunk%20augmented%20reality%20interface%20with%20holographic%20elements%20overlaid%20on%20dark%20urban%20environment%2C%20futuristic%20HUD%20display%20with%20neon%20elements%2C%20digital%20art%20with%20glowing%20circuit%20patterns%20and%20data%20visualization&width=600&height=600&seq=6&orientation=squarish",
-      github: "https://vijay33.netlify.app/",
+      github: "https://vijayportfolio3.netlify.app/",
     },
   ];
 
